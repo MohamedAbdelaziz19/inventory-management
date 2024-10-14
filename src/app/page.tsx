@@ -1,11 +1,6 @@
-import DashboardPage from "../app/dashbord/page"
+import Dashboard from "./dashbord/page";
 
 
-// app/page.tsx
-export default function HomePage() {
-  return (
-    <section>
-     <DashboardPage/>
-    </section>
-  )
+export default function Home() {
+  return <Dashboard />;
 }

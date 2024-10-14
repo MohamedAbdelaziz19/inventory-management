@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensures all elements use the border-box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ensures full height and width for the root elements */
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm; /* Applies small text size globally */
+  @apply bg-gray-500; /* Applies a gray background globally */
+  @apply text-gray-900; /* Sets global text color to dark gray */
+}
+
+/* Custom grid row configuration for medium screens (768px and above) */
+@media (min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh); /* 8 rows, each 20vh tall */
+  }
+}
+
+/* Custom grid row configuration for large screens (1280px and above) */
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh); /* 8 rows, each 7.5vh tall */
+  }
+}
