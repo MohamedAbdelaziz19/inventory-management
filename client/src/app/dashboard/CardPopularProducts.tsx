@@ -2,7 +2,7 @@ import { useGetDashboardMetricsQuery } from "@/state/api";
 import { ShoppingBag } from "lucide-react";
 import React from "react";
 import Rating from "../(components)/Rating";
-import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 const CardPopularProducts = () => {
   const { data: dashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
@@ -24,8 +24,9 @@ const CardPopularProducts = () => {
                 className="flex items-center justify-between gap-3 px-5 py-7 border-b"
               >
                 <div className="flex items-center gap-3">
-                <Image
-                    src={"https://s3-gestion-stock.s3.us-east-2.amazonaws.com/product2.jpg"}
+                <CldImage
+                  src={`https://res.cloudinary.com/dzo2bvw5a/image/upload/v1725284359/Blogs/ojaq1bvjivp9dksvzwb7.jpg`}
+                    
                     alt={product.name}
                     width={48}
                     height={48}
