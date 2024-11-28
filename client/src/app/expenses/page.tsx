@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import {
   ExpenseByCategorySummary,
   useGetExpensesByCategoryQuery,
@@ -61,7 +60,7 @@ const Expenses = () => {
           acc[data.category] = {
             name: data.category,
             amount: 0,
-            color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+            color: "#8884d8", // Default color
           };
         }
         acc[data.category].amount += amount;
@@ -70,6 +69,8 @@ const Expenses = () => {
 
     return Object.values(filteredData);
   }, [expenses, selectedCategory, startDate, endDate]);
+
+  console.log(aggregatedData); // Check if data is populated correctly
 
   const classNames = {
     label: "block text-sm font-medium text-gray-700",
@@ -170,7 +171,7 @@ const Expenses = () => {
                 {aggregatedData.map((entry, index) => (
                   <Cell
                     key={`cell-${entry.name}`}
-                    fill={index === activeIndex ? "rgb(29, 78, 216)" : entry.color}
+                    fill={index === activeIndex ? "#1D4ED8" : entry.color}
                   />
                 ))}
               </Pie>

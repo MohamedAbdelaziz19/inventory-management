@@ -47,6 +47,20 @@ const Inventory = () => {
   return (
     <div className="flex flex-col">
       <Header name="Inventory" />
+  
+      {/* Buttons aligned to the right */}
+      <div className="flex justify-end space-x-4 mb-5">
+        {/* Update Button */}
+        <button className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-200">
+          Update
+        </button>
+  
+        {/* Delete Button */}
+        <button className="bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition-all duration-200">
+          Delete
+        </button>
+      </div>
+  
       <DataGrid
         rows={products}
         columns={columns}
@@ -56,6 +70,8 @@ const Inventory = () => {
       />
     </div>
   );
+  
+  
 };
 
 export default Inventory;
