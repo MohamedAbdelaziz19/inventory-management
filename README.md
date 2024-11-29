@@ -81,14 +81,6 @@ A complete **Inventory Management Dashboard** built with modern technologies for
 
 ---
 
-## 🖥️ Screenshots
-
-| Dashboard View | Data Table | Inventory Form |
-|----------------|------------|----------------|
-| ![Dashboard](path/to/dashboard-image.png) | ![Data Table](path/to/data-table-image.png) | ![Inventory Form](path/to/inventory-form-image.png) |
-
----
-
 ## 📚 AWS Services Integration
 
 ### AWS Setup Guide:
