@@ -129,8 +129,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌐 Connect with Me
 
-- **GitHub**:([https://github.com/yourusername](https://github.com/MohamedAbdelaziz19))
-- **LinkedIn**: ([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/abdelaziz-maaref-86863023b/))
+- **GitHub**:([https://github.com/MyACompte](https://github.com/MohamedAbdelaziz19))
+- **LinkedIn**: ([https://linkedin.com/in/MyACompte](https://www.linkedin.com/in/abdelaziz-maaref-86863023b/))
 
 
 ---
